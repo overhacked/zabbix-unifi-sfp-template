@@ -26,3 +26,11 @@ Avoid setting the check interval too frequently, as SSH agent checks consume mor
 | `{$UNIFI_SSH_PASS}`  | ubnt          |
 | `{$UNIFI_SFP1_PORT}` | 0/25          |
 | `{$UNIFI_SFP2_PORT}` | 0/26          |
+
+**Compatibility**
+Login via ssh on the switch and perform the following commands to see if your switch is capable of giving you the information this template attempts to get you:
+```
+telnet localhost
+show fiber-ports optics all
+show fiber-ports optics-info all
+```
